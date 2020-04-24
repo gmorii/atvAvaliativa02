@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="preto6">
+    <script>
+        
+        function pegavalor(){
+            var total = document.getElementById('n16').value;
+            var i = document.getElementById('n16').value - 1;
+            
+            while(i > 0){
+                total = total * i;
+                i--;
+            }
+            console.log(total)
+        }
+    </script>
+    
+    <button class="botao6" onclick="history.go(-1)" class="voltar">Home</button>
+    
+    <br />
+    
+    <div class="botao">
+    
+    <label for="n16">Numero:</label>
+    <input type="text" id="n16">
+    
+    <button class="botao6" onclick="pegavalor()">Verificar fatorial</button>
+
+    </div>
+</body>
+</html>

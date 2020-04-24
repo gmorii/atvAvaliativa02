@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="parimpar">
+    <script>
+        function verifcaPar(){ if (document.getElementById('n15').value % 2 == 0) {
+            alert("O número 2 é par")
+        } else {
+            alert("O numero 1 é impar")
+        }
+        if (document.getElementById('n25').value % 2 == 0) {
+            alert("O número 2 é par")
+        } else {
+            alert("O numero 1 é impar")
+        }
+        if (document.getElementById('n35').value % 2 == 0) {
+            alert("O número 2 é par")
+        } else {
+            alert("O numero 1 é impar")
+        }
+        }  
+    </script>
+    <button onclick="history.go(-1)" class="voltar">Home</button>
+
+    <br />
+    <nav class="parimpar">
+        <label for="n1">Numero 1:</label>
+        <input type="text" id="n15" />
+
+        <label for="n2">Numero 2:</label>
+        <input type="text" id="n25">
+
+        <label for="n3">Numero 3:</label>
+        <input type="text" id="n35">
+
+        <button onclick="verifcaPar()">Verificar</button>
+
+    </nav>
+</body>
+
+</html>

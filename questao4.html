@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+   
+</head>
+<body>
+    <script>
+        var Filme = {titulo: ["Coringa", "forrest gump", "Zumbilandia"], ano:[2019, 2009 , 1994], genero: ["drama", "comedia"]}
+    </script>
+    <button onclick="history.go(-1)" class="voltar">Home</button>
+    <br/>
+    <h1>Filmes favoritos</h1>
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>Ano</th>
+            <th>genero</th>
+        </tr>
+        <tr class="ex4linha">
+            <td><script>document.write(Filme.titulo[0])</script></td>
+            <td><script>document.write(Filme.ano[0])</script></td>
+            <td><script>document.write(Filme.genero[0])</script></td>
+        </tr>
+        <tr class="ex4linha">
+            <td><script>document.write(Filme.titulo[1])</script></td>
+            <td><script>document.write(Filme.ano[1])</script></td>
+            <td><script>document.write(Filme.genero[1])</script></td>
+        </tr>
+        <tr class="ex4linha">
+            <td><script>document.write(Filme.titulo[2])</script></td>
+            <td><script>document.write(Filme.ano[2])</script></td>
+            <td><script>document.write(Filme.genero[1])</script></td>
+        </tr>
+
+    </table>
+   
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var musicas = [];
+
+        function settoarray(){
+            var val = document.getElementById('musica').value;
+            musicas.push(val);
+            console.log(val);
+            document.getElementById('musica').value =   '';
+        }
+        
+         
+    </script>
+    <button onclick="history.go(-1)" class="voltar">Home</button>
+    <br/>
+    <h1 class="q3">Minhas musicas favoritas</h1>
+    
+
+    <div>
+        <label for="nome">Musica:</label>
+        <input type="text"  id="musica" /> 
+        <button onclick="settoarray()" >Confirmar</button>
+    </div>
+
+    <ul>
+        <li>Lista aparece nos logs</li>
+        <li>Se você quiser ver todas musicas que estão dentro do array, basta estar chamando por "musicas"</li>
+        
+    </ul>
+</body>
+</html>
